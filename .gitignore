@@ -1,3 +1,8 @@
+# IDE/desktop specific
+.idea
+.directory
+.*.kate-swp
+
 # Build dirs
 build
 cmake-build-*

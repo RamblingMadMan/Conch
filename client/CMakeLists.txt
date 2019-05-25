@@ -1,3 +1,5 @@
+find_package(Boost 1.66.0 REQUIRED COMPONENTS asio)
+
 set(
 	CONCH_SOURCES
 	main.cpp
@@ -5,4 +7,4 @@ set(
 
 add_executable(conch ${CONCH_SOURCES})
 
-target_link_libraries(conch fmt)
+target_link_libraries(conch fmt Boost::asio)
